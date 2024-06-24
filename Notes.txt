@@ -1,0 +1,190 @@
+HTML elements - the elements that u want to add in your website.
+Eg - <p>Welcome</p> (Here p is an html element)
+       <button>Hello</button>
+
+HTML tags - The whole (<>) is called html tags and the elements inside the tag is the name of the tag.
+
+Anchor tags - Used to link to any other websites
+Eg - <a href = "Link" >Link to the website</a>
+href="..." this attribute is modifing how the elements behave
+href is attribute name.
+the link inside double quotes is attribute value.
+
+Note -  extra spaces are ignored in the HTML.
+
+We have a thing called CSS Selector, <style> tag makes changes to the elements written inside it.
+
+To make changes to the corners of the buttons or any other elements we use (border-radius) , the higher the value the more rounded the borders
+
+General Techniques - Create buttons using HTML
+		Style the buttons using CSS one by one. 
+
+border-style - used to style the borders of the elements like solid colors
+
+spacing between elements are done using margin.
+
+Padding is a better alternatives for height and width.
+
+font-size,letter-spacing,margin-left,margin-right,
+
+The trick to rounded borders is to half the height or width, whichever is lower.
+
+HOVER,TRANSITIONS AND SHADOW - Hover is something when we shift the cursor onto any elements like buttons, it will change the style.
+Transition -  When we hover over the button its changing the style and in a more smooth manner, this is done using transition.
+Shadows - when we hover over any button, it will put shadows into it.
+
+For using hover we create a pseudo class which is just an additional style to the button class
+Syntax - .subscribe-button:hover{
+background-color:black;
+}
+
+Note - transition take two things - what we are transitioning and the amount of time it will take.
+We use . before class name to target the class.
+
+CHROME DEVTOOLS AND CSS BOX MODELS
+
+CSS Box models used to do spacing from the outside and the inside of the elements.
+Its not a good practice to specify the width and height of the element because when i add any more text, it will overflow the element.
+
+It tells us how much space an element takes up
+how far it is away from the other elements
+
+
+Important - Position property in CSS
+Specifies the type of positioning method used for an element.
+The key feature of div is it can contains any other elements inside.
+.
+There are 5 different position values - static(default), relative, fixed, absolute and sticky.
+
+An HTML entity lets us type out special characters.
+
+class name selector has more priority than elements name selector.
+
+Text elements is an element that is inside the line of text.
+<strong> - bold 
+<u> - underline 
+
+object-fit: cover,contains ; // adjust the image to cover the entire dimension even if it's doesn't cover the whole image.
+object-position: center,left or right;  // see the left, right or center side of the image
+
+
+
+Display property in CSS - Display element
+
+3 types of HTML block elements
+
+block elements - takes up the entire line
+inline block elements - only takes up as much space as it needed
+inline elements - only appears within a line of text. Eg: strong element
+
+
+<div> element - div stands for division or simply is a box or a container.
+When we are making any complex website then div element is used to group all those collection of elements and show them on a web page.
+block elements inside the div containers takes up only the block of line inside the container.
+
+the div element takes 100 percent of width
+
+
+Nested Layout Techniques
+Types - Vertical Layout and Horizontal layout.
+
+CSS Grid - makes more aligned horizontal layout.
+
+fr (free space) - is a special value in a grid means to take up the remaining spaces in a grid
+
+<div style="backgorund-color: light-blue">  -> this method is called inline style.
+
+FlexBox is similar to CSS grid.
+
+CSS grid is more rigid than flexbox.
+flex:1 -> fr1.
+flex:2 -> fr2.
+Both needs container or outer container to exceute.
+Here we write display: flex;
+flex-direction: row;
+
+flexbox - flexible layout
+
+justify-content - start, end, center, space-between etc.
+align-items - start, stretch, end
+
+
+Note - 1. To make the shadow on inside of the element we use - inset 2px 2px 4px rgba(0,0,0,0.05);
+
+flex-shrink:0; -> don't shrink
+
+Searchbox have their default width and in order to remove it and cause the search box to shrink we use - width:0;
+
+position: fixed -> to create an element thats sticks to the page while we scroll.
+
+position:absolute -> they take the same property as fixed but with little differences.
+fixed - placed in the browser window.
+absolute - placed in the page.
+
+Generally the elements that is written below are going to appear in front the elements that are written before it.
+We can override the by using the another property called z-index.
+So the element with higher z-index will appear in front of element having default z-index i.e., 0.
+So usually we set this to something like 100 so that we can have a lot of elements in between. If our page has a lot of layers, and usually if we don't care about the Z index.
+
+whenever a position absolute is inside a position fixed element, it's going to be placed a relative to this position fixed element.
+
+
+Justify-content - center horizontally
+align-items - center vertically only in case of flex-direction:row;
+
+In case of flex-direction: column; the properties are reversed.
+
+pointer-events:none; means when we hover over the tooltip it will not show the tooltip and will show only when we hover over the button.
+
+white-space:nowrap;
+
+The idea of responsive design is that the layout adjusts so that the website looks good.
+Media query in CSS -  to make the page responsive.
+
+CSS inheritance - mostly works with text properties like text-decoration, font-family, font-weight etc.
+All the inner elements inherit the properties of the outer elements.
+ 
+Semantic tags - <header>, <nav> , <main>, <section>, <aside>, <footer> etc, they are same as <div> except they give special meaning to the screen readers and give more structure to our page and screen readers.
+
+box-sizing allows us to include the border and padding to the element.
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height:
+
+
+The <label> HTML element represents a caption for an item in a user interface.
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+
+Note - margin: auto;  will work on horzontal margin only, and also won't work with floated and inline elements and by itself it also doesn't work with the absolute and fixed elements.
+
+text-align - is used to align the text as u want.
+
+Animation in CSS - animation-name, animation-duration, animation-fill-mode, animation-timing-function, animation-iteration-count.
+animation-name : name of the animation.
+animation-duration : duration of the animation.
+animation-fill-mode : forward, alternate(to make the box stay at the final width of the animation).
+timing-function : ease, ease-in ease-out.
+iteration-count : number of times animation will run.
+animation-direction: normal, column reverse, reverse etc.
+
+to run the animation we use keyframes.
+
+Syntax - @keyframes animation-name{
+from{
+	width:200px;
+    }
+to{
+	width:400px;
+  }
+}
+
+or 
+@keyframes animation-name{
+0%{}
+25%{}
+50%{}
+100%{}
+}
+
+Animation shorthand Syntax - animation - animation-name animation-duration timing-function iteration-count animation-fill-mode;
+
+The animation-fill-mode CSS property sets how a CSS animation applies styles to its target before and after its execution.

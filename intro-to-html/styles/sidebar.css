@@ -1,0 +1,105 @@
+@media (max-width:1200px){
+    .sidebar{
+        background-color: white;
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        z-index: 200;
+    }
+    .sidebar-link{
+        height: 90px;
+        width: 86px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .sidebar-link:hover{
+        background-color: rgb(229, 228, 228);
+        transition: background-color 0.3;
+    }
+    .sidebar-link img{
+        height: 30px;
+        margin-bottom: 8px;
+        cursor:pointer
+    }
+    .sidebar-link div{
+        font-family: Roboto,Arial;
+        font-size: 12px;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1263px)
+{
+    .sidebar{
+        background-color: white;
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        z-index: 200;
+        width: 160px;
+        overflow: hidden; 
+        /*if you want the inner divs to be just abruptly cut off, 
+        you can use overflow:hidden; on the outside div to hide the overflow on the page */
+    }
+    .sidebar-link{
+        height: 90px;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        cursor: pointer;
+        padding: 0px 0px 0px 10px;
+    }
+    .sidebar-link:hover{
+        background-color: rgb(229, 228, 228);
+        transition: background-color 0.3s;
+    }
+    .sidebar-link img{
+        height: 30px;
+        margin-bottom: 8px;
+        cursor:pointer
+    }
+    .sidebar-link div{
+        font-family: Roboto,Arial;
+        font-size: 12px;
+    }
+    .sidebar-link div{
+        margin-left: 20px;
+    }
+}
+
+@media (min-width:1264px){
+    .sidebar{
+        background-color: white;
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        z-index: 200;
+    }
+    .sidebar-link{
+        height: 90px;
+        width: 86px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .sidebar-link:hover{
+        background-color: rgb(229, 228, 228);
+        transition: background-color 0.3;
+    }
+    .sidebar-link img{
+        height: 30px;
+        margin-bottom: 8px;
+        cursor:pointer
+    }
+    .sidebar-link div{
+        font-family: Roboto,Arial;
+        font-size: 12px;
+    }
+}
